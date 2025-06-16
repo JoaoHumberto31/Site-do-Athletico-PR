@@ -1,0 +1,108 @@
+.fundo{
+    background-color: rgb(173, 0, 0);
+    height: 100px;
+    width: 100%;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.radius {
+    border-radius: 30px;
+}
+
+.fundoLogin{
+    background-color: rgba(173, 0, 0, 0.781);
+    height: 650px;
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h2{
+    margin-top: 60px;
+    color: white;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    width: 100%;         
+    padding-left: 20px;
+}
+
+.input-single{
+    width: 95%;
+    position: relative;
+    margin: 50px 0;
+}
+
+.input-single label{
+    position: absolute;
+    bottom: 5px;
+    cursor: text;
+}
+
+.input{
+    width: 100%;
+    background-color: rgba(255, 227, 227, 0.301);
+    border: 0;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+    
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; 
+    justify-content: center;
+}
+
+.botoes input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+}
+
+.botoes input[type="submit"]:hover {
+    background-color: #ff5050;
+}
