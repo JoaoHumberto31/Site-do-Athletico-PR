@@ -3,6 +3,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 1 10%;
+    margin-top: 40px;
 }
 
 figure {
@@ -23,8 +24,12 @@ figcaption {
     border: black solid 2px;
 }
 
-.sombra {
-    box-shadow: rgb(131, 131, 131) 0px 0px 17px 5px;
+.clique {
+    transition: transform 0.3s ease;
+}
+
+.clique:hover{
+    transform: scale(1.1);
 }
 
 .center{
@@ -35,7 +40,9 @@ figcaption {
 
 .fundo{   
     background-color: rgb(192, 195, 194);
-
+    padding: 15px;
+    margin: 10px;
+    margin-top: 0px;
 }
 
 .fonteTitulo{
