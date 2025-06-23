@@ -4,6 +4,47 @@
     width: 100%;
     border-end-start-radius: 50px;
     border-end-end-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-athletico{
+    margin-left: 200%;
+    align-self: center;
+}
+
+.carrinho-compra{
+    margin-left: auto;
+    margin-right: 2.5%;
+}
+
+.bandeira-brasil{
+    margin-right: 2.5%;
+}
+
+.bandeira-brasil img{
+    border-radius: 10px;
+}
+
+.logo-login{
+    margin-right: 0.5%;
+}
+
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    margin-left: 3%; 
+    cursor: pointer;
+}
+
+.menu-icon span{
+    display: block;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.89);
     
 }
 
@@ -18,10 +59,10 @@ body{
 }
 
 .fundoLogin{
-    background-color: rgba(173, 0, 0, 0.781);
-    height: 650px;
+    background-color: rgba(173, 0, 0, 0.815);
+    height: 750px;
     width: 900px;
-    margin: 20px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +88,7 @@ h2{
 .input-single{
     width: 95%;
     position: relative;
-    margin: 50px 0;
+    margin: 70px 17px;
 }
 
 .input-single label{
@@ -58,7 +99,7 @@ h2{
 
 .input{
     width: 100%;
-    background-color: rgba(255, 227, 227, 0.301);
+    background-color: rgba(255, 227, 227, 0);
     border: 0;
     border-bottom: 2px solid black;
     font-size: 17px;
@@ -82,14 +123,14 @@ form input[type=submit]{
     padding: 10px 40px;
     border: 0;
     border-radius: 10px;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: white;
     cursor: pointer;
 }
 
 .botoes {
     display: flex;
-    gap: 10px; /* Espaço entre os botões */
+    gap: 10px; 
     margin-top: 20px; 
     justify-content: center;
 }
@@ -101,8 +142,10 @@ form input[type=submit]{
     background-color: #ff0000;
     color: white;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .botoes input[type="submit"]:hover {
     background-color: #ff5050;
+    transform: scale(1.1);
 }

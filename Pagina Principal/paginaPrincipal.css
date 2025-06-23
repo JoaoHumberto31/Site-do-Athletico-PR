@@ -1,0 +1,67 @@
+.fundo{
+    background-color: rgb(173, 0, 0);
+    height: 100px;
+    width: 100%;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-athletico{
+    margin-left: 200%;
+    align-self: center;
+}
+
+.carrinho-compra{
+    margin-left: auto;
+    margin-right: 2.5%;
+}
+
+.bandeira-brasil{
+    margin-right: 2.5%;
+}
+
+.bandeira-brasil img{
+    border-radius: 10px;
+}
+
+.logo-login{
+    margin-right: 0.5%;
+}
+
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    margin-left: 3%; 
+    cursor: pointer;
+}
+
+.menu-icon span{
+    display: block;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.89);
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo-evento{
+    background-color: white;
+    height: 10px;
+    width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
