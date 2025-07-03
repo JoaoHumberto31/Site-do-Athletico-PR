@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos Arena CAP</title>
+    <link rel="stylesheet" href="paginaPrincipal.css">
+    <link rel="shortcut icon" href="/Imagens/Athletico_Paranaense_(Logo_2019).svg.png" type="image/x-icon">
+</head>
+<body style="background-image: url(https://static.athletico.com.br/wp-content/uploads/2025/06/04132534/Torcida2025-1200.jpg);">
+    <header class="fundo">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <b><p style="color: rgba(255, 255, 255, 0.89); margin-left: 20%; font-family:Arial, Helvetica, sans-serif; cursor: pointer;">MENU</p></b>
+        <div>
+            <img src="/Imagens/Athletico-1980-letters.webp" height="50px" alt="Simbolo do Athletico" class="logo-athletico">
+        </div>
+        <div class="carrinho-compra">
+            <img src="/Imagens/shopping_cart_70dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" height="40px" alt="carrinho de compras">
+        </div>
+        <div class="bandeira-brasil">
+            <img src="/Imagens/bandeira-do-brasil.png" alt="bandeira do Brasil" height="40px">
+        </div>
+        <div class="logo-login">
+            <img src="/Imagens/account_circle_70dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="logo do login" height="58px">
+        </div>
+        <div style="margin-right: 3%;">
+        <p><a href="/PaginaLogin/paginaLogin.html" style="color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold; cursor: pointer;">LOGIN</p></a>
+        </div>
+    </header>
+    <div style="display: flex; ">
+        <div class="fundo-evento" style="margin: 0px auto; margin-top: 2%;">
+            <div style="display: flex;">
+                <img src="/Imagens/ServicoJogoCAPxCRB-1200.png" alt="CAPxCRB" height="98%" width="100%" style="border-radius: 20px; border: rgb(0, 0, 0) solid 2px;">
+            </div>
+            <div>
+                <h2>Campeonato Brasileiro Série B</h2>
+                <h3 style="display: flex; justify-content: center; color: rgb(146, 146, 146);">Próximo jogo dia 14/06.</h3>
+            </div>
+            <div style="padding-top: 8%;">
+                <button class="botao-evento" onclick="PaginaJogo()">Comprar/Informações</button>
+            </div>
+        </div>
+        <div class="fundo-evento" style="margin: 0px auto; margin-top: 2%;">
+            <div>
+                <img src="/Imagens/4382671-stand-up-comedy-banner-design-with-red-red-cortains-background-gratis-vetor.jpg" alt="Stand-UP" height="98%" width="100%" style="border-radius: 20px; border: rgb(0, 0, 0) solid 2px;">
+            </div>
+            <div>
+                <h2>Stand-Up Comedy!</h2>
+                <h3 style="display: flex; justify-content: center; color: rgb(146, 146, 146);">Dias 14, 15 e 16 de junho.</h3>
+            </div>
+            <div style="padding-top: 8%;">
+                <button class="botao-evento" onclick="PaginaStandup()" style="padding: 10px 100px;">Informações</button>
+            </div>
+        </div>
+    </div>
+    <div class="fundo-evento" style="margin: 2% auto; width: 800px;">
+        <div>
+            <img src="/Imagens/maxresdefault.jpg" alt="Sky Walk" height="98%" width="100%" style="border-radius: 20px; border: rgb(0, 0, 0) solid 2px;">
+        </div>
+        <div style="margin-top: 5%;">
+            <h1>EM BREVE!!!</h1>
+        </div>
+    </div>
+    <script>
+        function PaginaJogo(){
+            window.location.href = '/PaginaJogo/paginaJogo.html';
+        }
+        function PaginaStandup(){
+            window.location.href = '/PaginaStandUp/paginaStandUp.html';
+        }
+    </script>
+</body>
+</html>

@@ -53,15 +53,3 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
-.fundo-evento{
-    background-color: white;
-    height: 500px;
-    width: 400px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    justify-content: center;
-}
