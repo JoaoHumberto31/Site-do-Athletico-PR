@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="paginaJogo.css">
     <link rel="shortcut icon" href="/Imagens/Athletico_Paranaense_(Logo_2019).svg.png" type="image/x-icon">
 </head>
-<body style="background-image: url(https://static.athletico.com.br/wp-content/uploads/2025/06/04132534/Torcida2025-1200.jpg);">
+<body class="imagem-fundo">
     <header class="fundo">
-        <div class="menu-icon">
+        <div class="menu-icon" onclick="abrirMenu()">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <b><p style="color: rgba(255, 255, 255, 0.89); margin-left: 20%; font-family:Arial, Helvetica, sans-serif; cursor: pointer;">MENU</p></b>
+        </div>     
+        <p onclick="abrirMenu()" style="color: rgba(255, 255, 255, 0.89); margin-left: 1%; font-family:Arial, Helvetica, sans-serif; cursor: pointer; font-weight:bold">MENU</p>
         <div>
             <img src="/Imagens/Athletico-1980-letters.webp" height="50px" alt="Simbolo do Athletico" class="logo-athletico">
         </div>
@@ -34,10 +34,10 @@
     <div>
         <div class="fundo-principal">
             <div style="display: flex;">
-                <img src="/Imagens/ServicoCAPxCRB-1600.jpg" alt="Serviço de Jogo" height="440px" width="1200px" style="margin: 1%; border-radius: 20px; border: black solid 2px;">   
-                <div style="flex-direction: column; align-items: center; margin-top: 1%; margin-left: 6%;">
+                <img src="/Imagens/ServicoCAPxCRB-1600.jpg" alt="Serviço de Jogo" height="440px" width="65%" style="margin: 1%; border-radius: 20px; border: black solid 2px;">   
+                <div style="flex-direction: column; align-items: center; margin-top: 1%; margin-left: 3%">
                         <h1 style="margin: 0;">ATHLETICO X CRB</h1>
-                    <div style="margin-top: 1%;">
+                    <div>
                         <h2>Local: </h2>
                         <h2 style="text-align: center;" >Ligga Arena</h2>
                         <h2>Data/Hora:</h2>
@@ -48,12 +48,41 @@
                     <button class="botao-evento" onclick="">Comprar Ingressos</button>
                 </div>
             </div>
-            <div style="margin: 1%;">
-                <h1></h1>
+            <div style="margin: 1% 2%;">
+                <h1>Serviços de Jogo</h1>
+                <h3>O Athletico enfrenta o Remo, às 18h30 deste sábado (14), na Arena da Baixada, em jogo válido pela 4ª rodada do Campeonato Brasileiro da Série B.</h3>
+                <h1>CAPxCRB</h1>
+                <div style="display: flex;">
+                    <div>
+                    <h3>– Setor Red: R$ 75 (meia) e R$ 150 (inteira)</h3>
+                    <h3>– Setor Gold: R$ 100 (meia) e R$ 200 (inteira)</h3>
+                    <h3>– Setor Black – VIP: R$ 125 (meia) e R$ 250 (inteira)</h3>
+                    <h3>– Choperia Arena Brahma: R$ 125 (meia) e R$ 250 (inteira)</h3>
+                    <h3>– Setor Visitante: R$ 75 (meia) e R$ 150 (inteira)</h3>
+                    </div>
+                    <img src="/Imagens/MapaBrasilerao2024_Padrao.png" alt="Setores" height="300px" width="540px" style="margin: 2%;">
+                </div>
+                <div>
+                    <h3 style="font-weight:bold;">Ingressos com desconto para Sócios Furacão:</h3>
+                    <h3>– Setor Red: R$ 40</h3>
+                    <h3>– Setor Gold: R$ 50</h3>
+                </div>
             </div>
         </div>
     </div>
+    <div id="menu-lateral" class="menu-lateral">
+        <span class="fechar" onclick="fecharMenu()">×</span>
+        <a href="#">Campeonato Brasileiro Série B</a>
+        <a href="#">Stand-Up Comedy!</a>
+    </div>    
+    <script>
+        function abrirMenu() {
+            document.getElementById("menu-lateral").style.left = "0";
+        }
     
-    
+        function fecharMenu() {
+            document.getElementById("menu-lateral").style.left = "-250px";
+        }
+    </script>           
 </body>
 </html>

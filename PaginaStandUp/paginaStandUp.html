@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="paginaStandUp.css">
     <link rel="shortcut icon" href="/Imagens/Athletico_Paranaense_(Logo_2019).svg.png" type="image/x-icon">
 </head>
-<body style="background-image: url(https://static.athletico.com.br/wp-content/uploads/2025/06/04132534/Torcida2025-1200.jpg);">
+<body class="imagem-fundo">
     <header class="fundo">
-        <div class="menu-icon">
+        <div class="menu-icon" onclick="abrirMenu()">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <b><p style="color: rgba(255, 255, 255, 0.89); margin-left: 20%; font-family:Arial, Helvetica, sans-serif; cursor: pointer;">MENU</p></b>
+        </div>     
+        <p onclick="abrirMenu()" style="color: rgba(255, 255, 255, 0.89); margin-left: 1%; font-family:Arial, Helvetica, sans-serif; cursor: pointer; font-weight:bold">MENU</p>
         <div>
             <img src="/Imagens/Athletico-1980-letters.webp" height="50px" alt="Simbolo do Athletico" class="logo-athletico">
         </div>
@@ -31,5 +31,23 @@
         <p><a href="" style="color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold; cursor: pointer;">LOGIN</p></a>
         </div>
     </header>
+
+
+
+
+    <div id="menu-lateral" class="menu-lateral">
+        <span class="fechar" onclick="fecharMenu()">×</span>
+        <a href="#">Campeonato Brasileiro Série B</a>
+        <a href="#">Stand-Up Comedy!</a>
+    </div>    
+    <script>
+        function abrirMenu() {
+            document.getElementById("menu-lateral").style.left = "0";
+        }
+    
+        function fecharMenu() {
+            document.getElementById("menu-lateral").style.left = "-250px";
+        }
+    </script>
 </body>
 </html>
