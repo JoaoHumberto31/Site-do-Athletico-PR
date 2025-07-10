@@ -162,11 +162,13 @@ h2{
     margin: 70px 17px;
 }
 
-.input-single label{
+.input-single label {
     position: absolute;
     bottom: 5px;
-    cursor: text;
+    left: 0;
+    pointer-events: none;
 }
+
 
 .input{
     width: 100%;
@@ -177,11 +179,10 @@ h2{
     outline: 0;
 }
 
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label{
+.input-single input:focus ~ label,
+.input-single input:not(:placeholder-shown) ~ label {
     transform: translateY(-24px);
     font-size: 12px;
-
 }
 
 .btn{
